@@ -1,0 +1,54 @@
+﻿<Application x:Class="CRMfinalProject.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:local="clr-namespace:CRMfinalProject"
+            StartupUri="mainform.xaml" >
+   
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <hc:ThemeResources/>
+                <hc:Theme/>
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+            <Style x:Key="textblumedium" TargetType="TextBlock" >
+                <Setter Property="FontFamily" Value="mitra"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="#0a2463"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+            <Style x:Key="numberblumedium" TargetType="TextBlock" >
+                <Setter Property="FontFamily" Value="mitra"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="#0a2463"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+            <Style x:Key="texwhitemedium" TargetType="TextBlock" >
+                <Setter Property="FontFamily" Value="mitra"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="#f2f2f2"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+            <Style x:Key="texwhitm" TargetType="TextBlock" >
+                <Setter Property="FontFamily" Value="mitra"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="#f2f2f2"/>
+                <Setter Property="FontWeight" Value="Medium"/>
+            </Style>
+            <Style x:Key="numberwhitemedium" TargetType="TextBlock" >
+                <Setter Property="FontFamily" Value="mitra"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Foreground" Value="#f2f2f2"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+       
+    </Application.Resources>
+</Application>

@@ -1,0 +1,10 @@
+J:\peractis of modhej\C#\CRMfinalProject\BE\bin\Debug\BE.dll
+J:\peractis of modhej\C#\CRMfinalProject\BE\bin\Debug\BE.pdb
+J:\peractis of modhej\C#\CRMfinalProject\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache
+J:\peractis of modhej\C#\CRMfinalProject\BE\obj\Debug\BE.dll
+J:\peractis of modhej\C#\CRMfinalProject\BE\obj\Debug\BE.pdb
+G:\peractis of modhej\C#\CRMfinalProject\BE\bin\Debug\BE.dll
+G:\peractis of modhej\C#\CRMfinalProject\BE\bin\Debug\BE.pdb
+G:\peractis of modhej\C#\CRMfinalProject\BE\obj\Debug\BE.dll
+G:\peractis of modhej\C#\CRMfinalProject\BE\obj\Debug\BE.pdb
+G:\peractis of modhej\C#\CRMfinalProject\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache

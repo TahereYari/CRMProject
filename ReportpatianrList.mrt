@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="2">
+      <listpatiant Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>listpatiant</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category />
+        <Columns isList="true" count="3">
+          <value>Doctor,BE.Doctor</value>
+          <value>FullName,System.String</value>
+          <value>VisitDate,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>a73f93fc768d484b96894dd0e04d47ef</Guid>
+        <Key>bbe80ef474604febb1194801233be590</Key>
+        <Name>listpatiant</Name>
+      </listpatiant>
+      <lipa Ref="3" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>lipa</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category />
+        <Columns isList="true" count="3">
+          <value>Name,System.String</value>
+          <value>FullName,System.String</value>
+          <value>VisitDate,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>10487bf5ff9044b9a3d2b02636d169b0</Guid>
+        <Name>lipa</Name>
+      </lipa>
+    </BusinessObjects>
+    <Databases isList="true" count="1">
+      <listpaziresh Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>listpaziresh</Alias>
+        <ConnectionStringEncrypted />
+        <Key>24a067718a2c4d0ab65a3b0467fdebdd</Key>
+        <Name>listpaziresh</Name>
+      </listpaziresh>
+    </Databases>
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="2">
+      <value>,coctorname,coctorname,,System.String,,False,False,False,False,,e8c9e1d28b75489595a77ba74ab6a130</value>
+      <value>,date,date,,System.DateTime,_x0032__x002F_11_x002F_2023_x0020_9:40:38_x0020_PM,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>2d4cb253ce2940b0927f0769cf667159</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <Panel1 Ref="6" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,19,3.8</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.8,2.6,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb Light,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>نام دکتر</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.2,2.6,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb Light,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{coctorname}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6,0.2,6.6,1.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb Light,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>لیست بیماران بر اساس تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.8,2.6,1.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb Light,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{date}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text7 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,2.6,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb Light,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>تاریخ مراجعه</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>Panel1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </Panel1>
+        <Panel2 Ref="12" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.2,19,18.2</ClientRectangle>
+          <Components isList="true" count="1">
+            <Tablelipa Ref="13" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+              <Brush>Transparent</Brush>
+              <BusinessObjectGuid>10487bf5ff9044b9a3d2b02636d169b0</BusinessObjectGuid>
+              <ClientRectangle>0,0.4,19,2.4</ClientRectangle>
+              <ColumnCount>3</ColumnCount>
+              <Components isList="true" count="9">
+                <Tablelipa_Cell1 Ref="14" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,0,6.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>0</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell1</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>VisitDate</Text>
+                  <TextBrush>Black</TextBrush>
+                </Tablelipa_Cell1>
+                <Tablelipa_Cell2 Ref="15" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>6.4,0,6.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>1</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell2</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>Name</Text>
+                  <TextBrush>Black</TextBrush>
+                </Tablelipa_Cell2>
+                <Tablelipa_Cell3 Ref="16" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>12.8,0,6.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>2</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell3</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>FullName</Text>
+                  <TextBrush>Black</TextBrush>
+                </Tablelipa_Cell3>
+                <Tablelipa_Cell4 Ref="17" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,0.8,6.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>3</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell4</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{lipa.VisitDate}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Tablelipa_Cell4>
+                <Tablelipa_Cell5 Ref="18" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>6.4,0.8,6.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>4</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell5</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{lipa.Name}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Tablelipa_Cell5>
+                <Tablelipa_Cell6 Ref="19" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>12.8,0.8,6.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>5</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell6</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{lipa.FullName}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Tablelipa_Cell6>
+                <Tablelipa_Cell7 Ref="20" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,1.6,6.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>6</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell7</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tablelipa_Cell7>
+                <Tablelipa_Cell8 Ref="21" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>6.4,1.6,6.4,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>7</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell8</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tablelipa_Cell8>
+                <Tablelipa_Cell9 Ref="22" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>12.8,1.6,6.2,0.8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>8</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tablelipa_Cell9</Name>
+                  <Page isRef="5" />
+                  <Parent isRef="13" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tablelipa_Cell9>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataSourceName isNull="true" />
+              <Expressions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <FooterRowsCount>1</FooterRowsCount>
+              <HeaderRowsCount>1</HeaderRowsCount>
+              <MinHeight>0.60000000000000009</MinHeight>
+              <Name>Tablelipa</Name>
+              <NumberID>9</NumberID>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <RowCount>3</RowCount>
+              <Sort isList="true" count="0" />
+            </Tablelipa>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>Panel2</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </Panel2>
+        <Text8 Ref="23" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>-6.2,1.8,1.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>IRANSansWeb Light,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Text>{date}</Text>
+          <TextBrush>Black</TextBrush>
+          <VertAlignment>Center</VertAlignment>
+        </Text8>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>54f08a16ffa34d199ffa96a6b373e671</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/12/2023 8:49:23 AM</ReportChanged>
+  <ReportCreated>2/11/2023 9:37:24 PM</ReportCreated>
+  <ReportFile>G:\peractis of modhej\C#\CRMfinalProject\ReportpatianrList.mrt</ReportFile>
+  <ReportGuid>c35ecda7259b459f9c94b54812c0fbb3</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

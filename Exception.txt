@@ -1,0 +1,43 @@
+----------------------------
+[Customer Explanation]
+
+
+
+----------------------------
+[General Info]
+
+Application: Stimulsoft Reports
+Framework:   v4.0.30319
+Version:     Version: 2019.4.2 from 13 November 2019
+MachineName: DESKTOP-FFBEUCS
+OSVersion:   Microsoft Windows NT 6.2.9200.0
+UserName:    ShahrRayane.IR
+
+----------------------------
+[Exception Info]
+Message:     Format of the initialization string does not conform to specification starting at index 0.
+
+Source:      Stimulsoft.Report
+
+StackTrace:
+   at Stimulsoft.Report.Dictionary.StiDictionary.ConnectToDatabases(List`1 databases, Boolean loadData, Boolean throwException)
+   at Stimulsoft.Report.Dictionary.StiDictionary.Connect(Boolean loadData, List`1 dataSources)
+   at Stimulsoft.Report.Engine.StiRenderProviderV2.ConnectToData(StiReport report)
+   at Stimulsoft.Report.Engine.StiRenderProviderV2.Render(StiReport report, StiRenderState state)
+   at Stimulsoft.Report.Engine.StiReportV2Builder.RenderSingleReport(StiReport masterReport, StiRenderState renderState)
+   at Stimulsoft.Report.StiReport.RenderReport(StiRenderState renderState)
+   at Stimulsoft.Report.StiReport.Render(StiRenderState renderState, StiGuiMode guiMode)
+   at Stimulsoft.Report.StiReport.Render(Boolean showProgress)
+   at Stimulsoft.Report.Design.Controls.StiDesignerPreviewControl.ButtonRefresh_Click(Object sender, EventArgs e)
+
+----------------------------
+[Assemblies]
+mscorlib, Version = 4.0.0.0
+Stimulsoft.Base, Version = 2019.4.2.0
+Stimulsoft.Report, Version = 2019.4.2.0
+Stimulsoft.Report.Design, Version = 2019.4.2.0
+Stimulsoft.Report.Import, Version = 2019.4.2.0
+Stimulsoft.Report.Win, Version = 2019.4.2.0
+System.Data, Version = 4.0.0.0
+System.Windows.Forms, Version = 4.0.0.0
+WindowsBase, Version = 4.0.0.0

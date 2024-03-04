@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BE.Activity" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <AssociationLine Name="user" Type="BE.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="2.781" />
+        <Point X="4.25" Y="2.781" />
+        <Point X="4.25" Y="3.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.3" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAEAAAAAAAAAAAAAAAAAAARAAAGAAAwA=</HashCode>
+      <FileName>Activity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+      <Property Name="user" />
+      <Property Name="ActivityCategory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BE.ActivityCategory" Collapsed="true">
+    <Position X="1" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Activities" Type="BE.Activity" FixedToPoint="true">
+      <Path>
+        <Point X="1.812" Y="4.25" />
+        <Point X="1.812" Y="3.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAIAAAgA=</HashCode>
+      <FileName>ActivityCategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Activities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Customer" Collapsed="true">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAABQAICAAAgA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Invoices" />
+      <Property Name="Activetis" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Invoice" Collapsed="true">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <AssociationLine Name="user" Type="BE.User">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.1" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Products" Type="BE.Product">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="-0.244" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAgAAAAAAAAIAAAIAABAAACAAAwQ=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="customer" />
+      <Property Name="user" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Products" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Product" Collapsed="true">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <AssociationLine Name="Invoices" Type="BE.Invoice">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.12" Y="0.206" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAAQAgAAAAAAAABAAACAAAgA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Invoices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BE.Reminder" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAEBAAAAAAAAAAAAAAIAAABAAACAAAgA=</HashCode>
+      <FileName>Reminder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BE.User" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Activities" Type="BE.Activity" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.062" Y="3.25" />
+        <Point X="4.062" Y="3.185" />
+        <Point X="3.688" Y="3.185" />
+        <Point X="3.688" Y="2.938" />
+        <Point X="2.5" Y="2.938" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Invoices" Type="BE.Invoice" FixedToPoint="true">
+      <Path>
+        <Point X="4.375" Y="3.25" />
+        <Point X="4.375" Y="1.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAEAIAAAAAAAAACAAQAAAAAAAACARAAAKAAAgA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Activities" />
+      <Property Name="Invoices" />
+      <Property Name="Reminders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
